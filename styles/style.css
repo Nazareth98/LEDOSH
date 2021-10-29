@@ -271,7 +271,7 @@ input[type="date"]{
 .chamada-bg {
     height: 500px;
     width: 100%;
-    background-image: url('/assets/imagens/bg-section.png');
+    background-image: url('../assets/imagens/bg-section.png');
     background-position: center center;
     background-size: cover;
 }
