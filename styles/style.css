@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Solomon', 'sans-serif';
+    src: url("/assets/fonts/Solomon_Sans/Solomon\ Sans\ Normal.otf") format('opentype');
+    font-weight: normal;
+}
+/* font-family: 'Poppins', sans-serif; */
+
+/* reset/pre-set */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: var(--corPrincipal);
+    border: none;
+}
+
+:root{
+    --corPrincipal: #A34C68;
+    --corSecundaria: #41423A;
+    --corComplementar: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Classes gerais */
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.section-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.section-flex div {
+    margin: auto;
+}
+
+
+.btn {
+    padding: 8px 16px;
+    margin: 7px;
+    background-color: var(--corPrincipal);
+    color: var(--corComplementar);
+    font-weight: 100;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    color: var(--corSecundaria);
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.icones {
+    display: inline-block;
+}
+
+
+/* Barra-topo */
+
+.barra-topo {
+    background-color: var(--corSecundaria);
+    font-size: 0.9rem;
+}
+
+.barra-topo span {
+    color: var(--corComplementar);
+    font-weight: 300;
+}
+
+.barra-topo li{
+    display: inline-block;
+    margin: auto 0;
+}
+
+.barra-topo ul {
+    line-height: 100%;
+}
+
+.topo-content {
+    margin-left: 10px;
+}
+
+
+/* Header */
+
+.logo {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.banner-principal{
+    width: 100%;
+    height: 700px;
+    background-image: url("../assets/imagens/bannerPrincipal.png");
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+}
+
+.banner-conteudo {
+    width: 45%;
+    height: 100%;
+    margin: auto 0 auto auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-conteudo div {
+    margin: 10px auto;
+    text-align: left;
+}
+
+.banner-conteudo h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+} 
+
+.banner-descricao {
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.banner-conteudo h1, .banner-conteudo p{
+    color: var(--corComplementar);
+}
+
+/* Main */
+
+.intro {
+    width: 50%;
+}
+
+.intro p {
+    font-size: 1.2rem,;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    width: 200px;
+}
+
+.cards-content {
+    background-color: rgba(216, 216, 216, 0.26);
+    padding: 5px;
+}
+
+.planos img {
+    width: 270px;
+    height: 340px;
+}
+
+.cards-title{
+    color: var(--corSecundaria);
+    width: 80%;
+    height: 60px;
+}
+
+.btn-cards {
+    padding: 10px 30px;
+    margin: auto;
+    width: 100%;
+}
+
+.formulario {
+    width: 73%;
+    padding: 20px 0px;
+}
+
+.formulario h3 {
+    font-weight: 400;
+}
+
+
+.formulario label {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.formulario span {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.checkbox {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+input[type="radio"]{
+    vertical-align: middle;
+}
+
+input[type="date"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+.form-box {
+    padding-bottom: 10px;
+}
+
+/* section 3 - chamada  */
+
+.chamada-posicionamento > div {
+    height: 250px;
+    width: 80%;
+}
+
+.chamada-box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chamada-box img {
+    max-width: 100%;
+}
+
+.chamada-bg {
+    height: 500px;
+    width: 100%;
+    background-image: url('/assets/imagens/bg-section.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+.chamada-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.chamada-text p{
+    color: var(--corComplementar);
+    font-size: 1.5rem;
+}
+
+/* Section 4 - Embaixadores */
+
+.embaixadores-bg {
+    background-color:rgb(248, 248, 248) ;
+}
+
+.embaixadores-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid var(--corSecundaria);
+    padding: 50px;
+    width: 90%;
+    
+}
+
+.embaixadores-cards > div {
+    width: 180px;
+}
+
+.embaixadores-cards img {
+    width: 100%;
+}
+
+.embaixadores-cards span {
+    color: var(--corSecundaria);
+}
+
+.embaixadores-titulo {
+    background-color: rgb(248, 248, 248);
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    top: -8%;
+    transform: translateX(-50%);
+}
+
+.embaixadores-chamada {
+    background-color: rgb(248, 248, 248);
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    top: 92%;
+    transform: translateX(-50%);
+}
+
+.embaixadores-chamada span {
+    color: var(--corSecundaria);
+    font-size: 1.5rem;
+}
+
+/* Slide - aside */
+
+.aside h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aside img {
+    width: 100%;
+}
+
+
+/* footer */
+
+.footer-svg {
+    display: flex;
+    justify-items: center;
+}
+
+.footer-svg > div {
+    margin-bottom: 0;
+}
+
+.footer-svg img{
+    width: 100%;
+    height: 110%;
+    margin: 0;
+}
+
+.footer-bg {
+    background-color: var(--corSecundaria);
+}
+
+.footer-container {
+    height: 100%;
+    padding: 20px;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+    color: var(--corComplementar);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer-container p,.footer-container a{
+    color: var(--corComplementar);
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.footer-container li{
+    line-height: 20px;
+} 
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px ;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-bg span{
+    color: var(--corComplementar);
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 10px;
+}
